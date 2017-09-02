@@ -1,0 +1,11 @@
+[Unit]
+Description=Formenheizung Webui Service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/formenheizung-webui
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
